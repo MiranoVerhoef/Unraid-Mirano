@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ha-fusion</Name>
+  <Repository>ghcr.io/matt8707/ha-fusion</Repository>
+  <Registry>https://github.com/matt8707/ha-fusion</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/150080-support-mirano-docker-containers/</Support>
+  <Project>https://github.com/matt8707/ha-fusion</Project>
+  <Overview>A modern, easy-to-use and performant custom Home Assistant dashboard</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI>http://[IP]:[PORT:5050]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/main/ha-fusion/seo-unraid.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1703502702</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/App/data Directory" Target="/app/data" Default="" Mode="rw" Description="/App/data Directory" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Webui Port" Target="5050" Default="5050" Mode="tcp" Description="Webui Port" Type="Port" Display="always" Required="false" Mask="false">5050</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Amsterdam" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Amsterdam</Config>
+  <Config Name="Home assistant URL" Target="HASS_URL" Default="http://192.168.*.***:8123" Mode="" Description="Home assistant URL" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.*.***:8123</Config>
+</Container>
