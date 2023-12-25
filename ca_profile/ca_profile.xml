@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/main/ca_profile/Avatar.jpeg</Icon>
+  <Profile>
+    Helping out the community by creating CA Templates, whereas no one has made one yet.
+  </Profile>
+  <Forum>https://forums.unraid.net/topic/150080-support-mirano-docker-containers/</Forum>
+  <WebPage>https://github.com/MiranoVerhoef/Unraid-Mirano</WebPage>
+</Maintainer>
