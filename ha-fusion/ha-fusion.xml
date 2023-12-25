@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="/App/data Directory" Target="/app/data" Default="" Mode="rw" Description="/App/data Directory" Type="Path" Display="true" Required="false" Mask="false"/>
+  <Config Name="/App/data Directory" Target="/app/data" Default="" Mode="rw" Description="/App/data Directory" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Webui Port" Target="5050" Default="5050" Mode="tcp" Description="Webui Port" Type="Port" Display="always" Required="true" Mask="false">5050</Config>
   <Config Name="Timezone" Target="TZ" Default="Europe/Amsterdam" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Amsterdam</Config>
   <Config Name="Home assistant URL" Target="HASS_URL" Default="http://192.168.*.***:8123" Mode="" Description="Home assistant URL" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.*.***:8123</Config>
