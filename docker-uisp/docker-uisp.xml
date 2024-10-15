@@ -19,7 +19,7 @@ In-app upgrades will not work. You can upgrade UISP by downloading the latest ve
   <Category>Network:Management</Category>
   <WebUI>https://[IP]:[PORT:443]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/MiranoVerhoef/Unraid-Mirano/blob/main/docker-uisp/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/refs/heads/main/docker-uisp/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -30,7 +30,7 @@ In-app upgrades will not work. You can upgrade UISP by downloading the latest ve
   <Config Name="HTTP web server" Target="80" Default="80" Mode="tcp" Description="Expose the HTTP web server port on the docker host" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="HTTPS and WSS web server" Target="443" Default="443" Mode="tcp" Description="Expose the HTTPS and WSS web server port on the docker host" Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="Netflow port" Target="2055" Default="2055" Mode="udp" Description="Expose the Netflow port on the docker host" Type="Port" Display="always" Required="true" Mask="false">2055</Config>
-  <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="The persistent data location, the database, certs and logs will be stored here" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/uisp" Mode="rw" Description="The persistent data location, the database, certs and logs will be stored here" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Demo Mode" Target="DEMO" Default="false" Mode="" Description="Enable UISP demo mode" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
   <Config Name="SSL Certificate" Target="SSL_CERT" Default="" Mode="" Description="Filename of custom SSL certificate in /config/usercert/" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="SSL Certificate Key" Target="SSL_CERT_KEY" Default="" Mode="" Description="Filename of custom SSL key in /config/usercert/" Type="Variable" Display="advanced" Required="false" Mask="false"/>
