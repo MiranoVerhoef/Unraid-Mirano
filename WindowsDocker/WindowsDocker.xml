@@ -16,7 +16,9 @@ ISO downloader&#xD;
 KVM acceleration&#xD;
 Web-based viewer&#xD;
 &#xD;
-Default installation will install Windows11</Overview>
+Default installation will install Windows11&#xD;
+&#xD;
+NOTE it will immediately start downloading the ISO when it starts on first boot.</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:8006]/</WebUI>
   <TemplateURL/>
@@ -24,19 +26,22 @@ Default installation will install Windows11</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1730298837</DateInstalled>
+  <DateInstalled>1730299478</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="KVM" Target="/dev/kvm" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/kvm</Config>
   <Config Name="Windows Version" Target="VERSION" Default="win11" Mode="" Description="Windows version to install:&#13;&#10;&#13;&#10;win11&#9;Windows 11 Pro&#9;5.4 GB&#13;&#10;ltsc11&#9;Windows 11 LTSC&#9;4.2 GB&#13;&#10;win11e&#9;Windows 11 Enterprise&#9;5.8 GB&#13;&#10;win10&#9;Windows 10 Pro&#9;5.7 GB&#13;&#10;ltsc10&#9;Windows 10 LTSC&#9;4.6 GB&#13;&#10;win10e&#9;Windows 10 Enterprise&#9;5.2 GB&#13;&#10;win8&#9;Windows 8.1 Pro&#9;4.0 GB&#13;&#10;win8e&#9;Windows 8.1 Enterprise&#9;3.7 GB&#13;&#10;win7&#9;Windows 7 Enterprise&#9;3.0 GB&#13;&#10;vista&#9;Windows Vista Enterprise&#9;3.0 GB&#13;&#10;winxp&#9;Windows XP Professional&#9;0.6 GB&#13;&#10;2025&#9;Windows Server 2025&#9;5.0 GB&#13;&#10;2022&#9;Windows Server 2022&#9;4.7 GB&#13;&#10;2019&#9;Windows Server 2019&#9;5.3 GB&#13;&#10;2016&#9;Windows Server 2016&#9;6.5 GB&#13;&#10;2012&#9;Windows Server 2012&#9;4.3 GB&#13;&#10;2008&#9;Windows Server 2008&#9;3.0 GB&#13;&#10;2003&#9;Windows Server 2003&#9;0.6 GB" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Storage Location" Target="/storage" Default="/mnt/user/appdata/" Mode="rw" Description="Where the OS disk + config is stored." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Disk Size" Target="DISK_SIZE" Default="64" Mode="" Description="Disk size in GB (64GB is default)" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Host File Share" Target="/data" Default="/mnt/user/appdata/" Mode="rw" Description="Open 'File Explorer' and click on the 'Network' section, you will see a computer called host.lan. Double-click it and it will show a folder called Data, which can be binded to any folder on your host via the compose file:" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Disk Size" Target="DISK_SIZE" Default="64" Mode="" Description="Disk size in GB (64GB is default)" Type="Variable" Display="always" Required="true" Mask="false">64</Config>
+  <Config Name="Host File Share" Target="/data" Default="" Mode="rw" Description="Open 'File Explorer' and click on the 'Network' section, you will see a computer called host.lan. Double-click it and it will show a folder called Data, which can be binded to any folder on your host via the compose file:" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Manual Installation of Windows" Target="MANUAL" Default="N" Mode="" Description="It's best to stick to the automatic installation, as it adjusts various settings to prevent common issues when running Windows inside a virtual environment.&#13;&#10;&#13;&#10;However, if you insist on performing the installation manually" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="CPU Cores" Target="CPU_CORES" Default="4" Mode="" Description="By default, the container will be allowed to use a maximum of 2 CPU cores and 4 GB of RAM.&#13;&#10;&#13;&#10;If you want to adjust this, you can specify the desired amount using the following environment variables:" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="CPU Cores" Target="CPU_CORES" Default="2" Mode="" Description="By default, the container will be allowed to use a maximum of 2 CPU cores and 4 GB of RAM.&#13;&#10;&#13;&#10;If you want to adjust this, you can specify the desired amount using the following environment variables:" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="RAM Size" Target="RAM_SIZE" Default="4G" Mode="" Description="By default, the container will be allowed to use a maximum of 2 CPU cores and 4 GB of RAM.&#13;&#10;&#13;&#10;If you want to adjust this, you can specify the desired amount using the following environment variables:" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Windows Language" Target="LANGUAGE" Default="ENGLISH" Mode="" Description="By default, the English version of Windows will be downloaded. But you can add the LANGUAGE environment variable to your compose file, in order to specify an alternative language" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Different Username" Target="USERNAME" Default="bill" Mode="" Description="By default, a user called Docker is created during the installation, with an empty password.&#13;&#10;&#13;&#10;If you want to use different credentials, you can change them in your compose file:" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Different Password" Target="PASSWORD" Default="gates" Mode="" Description="By default, a user called Docker is created during the installation, with an empty password.&#13;&#10;&#13;&#10;If you want to use different credentials, you can change them in your compose file" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Different Username" Target="USERNAME" Default="" Mode="" Description="By default, a user called Docker is created during the installation, with an empty password.&#13;&#10;&#13;&#10;If you want to use different credentials, you can change them in your compose file:" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Different Password" Target="PASSWORD" Default="" Mode="" Description="By default, a user called Docker is created during the installation, with an empty password.&#13;&#10;&#13;&#10;If you want to use different credentials, you can change them in your compose file" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="HTTPS WEBUI Port" Target="8006" Default="8006" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8006</Config>
+  <Config Name="RDP Port TCP" Target="3389" Default="3389" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">3389</Config>
+  <Config Name="RDP Port UDP" Target="3389" Default="3389" Mode="udp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">3389</Config>
+  <Config Name="KVM" Target="/dev/kvm" Default="" Mode="" Description="" Type="Device" Display="advanced" Required="false" Mask="false">/dev/kvm</Config>
 </Container>
