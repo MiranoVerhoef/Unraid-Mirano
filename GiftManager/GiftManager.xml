@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GiftManager</Name>
+  <Repository>icbest/giftmanager</Repository>
+  <Registry>https://hub.docker.com/r/icbest/giftmanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/150080-support-mirano-docker-containers/</Support>
+  <Project>https://github.com/icbestCA/giftmanager</Project>
+  <Overview>A Gift Ideas Management app that lets users add, edit, and organize gift ideas with descriptions, links, and prices. It supports sorting, marking gifts as bought, and tracking past gifts &#x2014; all while keeping surprises secret.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/refs/heads/main/GiftManager/GiftManager.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1761584306</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="5000" Default="5000" Mode="tcp" Description="Port to expose the WEBUI" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data Storage" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Expose Docker sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Use this volume to be able to restart the container from the flask app, making it easier to modify settings." Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <TailscaleStateDir/>
+</Container>
