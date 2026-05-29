@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Fetcharr</Name>
+  <Repository>egg82/fetcharr</Repository>
+  <Registry>https://hub.docker.com/r/egg82/fetcharr/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/150080-support-mirano-docker-containers/</Support>
+  <Project>https://github.com/egg82/fetcharr</Project>
+  <ReadMe>https://github.com/egg82/fetcharr/blob/main/README.md</ReadMe>
+  <Overview>Fetcharr is a lightweight automation companion for Sonarr, Radarr, Lidarr, and other *arr apps. It continuously scans your libraries for missing, wanted, or upgradeable content and triggers active searches automatically to improve media acquisition beyond standard RSS syncing. Designed for self-hosted environments with simple Docker deployment and low resource usage.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/refs/heads/main/Fetcharr/Fetcharr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1780057030</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Radarr &amp;amp; Sonarr</Requires>
+  <Config Name="Verify SSL certificates" Target="VERIFY_CERTS" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Search Amount" Target="SEARCH_AMOUNT" Default="5" Mode="" Description="Number of items to search at each run" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Search Interval" Target="SEARCH_INTERVAL" Default="1hour" Mode="" Description="How often to perform searches" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/app/config" Default="/mnt/user/docker/fetcharr/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Cache Directory" Target="/app/cache" Default="/mnt/user/docker/fetcharr/cache" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Logs Directory" Target="/app/logs" Default="/mnt/user/docker/fetcharr/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Plugin Directory" Target="/app/plugins" Default="/mnt/user/docker/fetcharr/plugins" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Radarr 0 URL" Target="RADARR_0_URL" Default="https://radarr.home.lab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr 0 API Key" Target="RADARR_0_API_KEY" Default="e8ea891d72ff973fa6db0d34369a60a7" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr 0 URL" Target="SONARR_0_URL" Default="https://sonarr.home.lab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr 0 API Key" Target="SONARR_0_API_KEY" Default="71730b5dfaa4293fe0c050844c10df66" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DRY_RUN" Target="DRY_RUN" Default="false" Mode="" Description="Run in dry-run mode, which will list (but not perform) searches" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Logging Mode" Target="LOG_MODE" Default="info" Mode="" Description="Logging Mode trace, debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <TailscaleStateDir/>
+</Container>
