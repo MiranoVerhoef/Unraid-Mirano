@@ -36,6 +36,8 @@
   <Config Name="Sonarr 0 URL" Target="SONARR_0_URL" Default="https://sonarr.home.lab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Sonarr 0 API Key" Target="SONARR_0_API_KEY" Default="71730b5dfaa4293fe0c050844c10df66" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="DRY_RUN" Target="DRY_RUN" Default="false" Mode="" Description="Run in dry-run mode, which will list (but not perform) searches" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Logging Mode" Target="LOG_MODE" Default="info" Mode="" Description="Logging Mode trace, debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Process GID override, eg. Unraid would be 100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="Logging Mode" Target="LOG_MODE" Default="info" Mode="" Description="Logging Mode trace, debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">debug</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Process UID override, eg. Unraid would be 99" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <TailscaleStateDir/>
 </Container>
