@@ -25,7 +25,7 @@
   <Requires>Radarr &amp;amp; Sonarr</Requires>
   <Config Name="Verify SSL certificates" Target="VERIFY_CERTS" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Search Amount" Target="SEARCH_AMOUNT" Default="5" Mode="" Description="Number of items to search at each run" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Search Interval" Target="SEARCH_INTERVAL" Default="1hour" Mode="" Description="How often to perform searches" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Search Interval" Target="SEARCH_INTERVAL" Default="1hour" Mode="" Description="How often to perform searches - 	5minutes, 3hours, 1day, etc" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Use Cutoff" Target="USE_CUTOFF" Default="false" Mode="" Description="Select for items that do not meet their profile cutoff" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Config Directory" Target="/app/config" Default="/mnt/user/docker/fetcharr/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Cache Directory" Target="/app/cache" Default="/mnt/user/docker/fetcharr/cache" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
