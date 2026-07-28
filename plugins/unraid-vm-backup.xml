@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>Unraid VM Backup</Name>
+  <PluginURL>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-VM-Backup/main/unraid.vmbackup.plg</PluginURL>
+  <Support>https://github.com/MiranoVerhoef/Unraid-VM-Backup/issues</Support>
+  <Project>https://github.com/MiranoVerhoef/Unraid-VM-Backup</Project>
+  <ReadMe>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-VM-Backup/main/README.md</ReadMe>
+  <Overview>Native Unraid VM backup and recovery with live and offline capture, incremental backups, retention, guided restore, and isolated Recovery Testing.</Overview>
+  <Category>Tools:Utilities</Category>
+  <Beta>true</Beta>
+  <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-VM-Backup/main/docs/assets/unraid-vm-backup.png</Icon>
+</Plugin>

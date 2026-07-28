@@ -2,7 +2,7 @@
 <Maintainer>
   <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/main/ca_profile/Avatar.jpeg</Icon>
   <Profile>
-    Helping out the community by creating CA Templates, whereas no one has made one yet.
+    Community Applications templates maintained by Mirano Verhoef, including Docker applications and the Unraid VM Backup plugin. Use the support link in each entry for application-specific help.
   </Profile>
   <Forum>https://forums.unraid.net/topic/150080-support-mirano-docker-containers/</Forum>
   <WebPage>https://github.com/MiranoVerhoef/Unraid-Mirano</WebPage>
