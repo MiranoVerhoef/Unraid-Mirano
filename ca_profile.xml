@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
   <Profile>
-    Community Applications templates maintained by Mirano Verhoef, including Docker applications and the Unraid VM Backup plugin. Use the support link in each entry for application-specific help.
+    Community Applications templates maintained by Mirano Verhoef, including Docker applications. Use the support link in each entry for application-specific help.
   </Profile>
   <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/main/ca_profile/Avatar.jpeg</Icon>
   <WebPage>https://github.com/MiranoVerhoef/Unraid-Mirano</WebPage>
