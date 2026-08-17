@@ -16,7 +16,7 @@
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/MiranoVerhoef/Unraid-Mirano/refs/heads/main/Fetcharr/Fetcharr.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--user 0:0</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1780057030</DateInstalled>
@@ -31,10 +31,10 @@
   <Config Name="Cache Directory" Target="/app/cache" Default="/mnt/user/docker/fetcharr/cache" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Logs Directory" Target="/app/logs" Default="/mnt/user/docker/fetcharr/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Plugin Directory" Target="/app/plugins" Default="/mnt/user/docker/fetcharr/plugins" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Radarr 0 URL" Target="RADARR_0_URL" Default="https://radarr.home.lab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Radarr 0 API Key" Target="RADARR_0_API_KEY" Default="e8ea891d72ff973fa6db0d34369a60a7" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Sonarr 0 URL" Target="SONARR_0_URL" Default="https://sonarr.home.lab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Sonarr 0 API Key" Target="SONARR_0_API_KEY" Default="71730b5dfaa4293fe0c050844c10df66" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr 0 URL" Target="RADARR_0_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr 0 API Key" Target="RADARR_0_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr 0 URL" Target="SONARR_0_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr 0 API Key" Target="SONARR_0_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="DRY_RUN" Target="DRY_RUN" Default="false" Mode="" Description="Run in dry-run mode, which will list (but not perform) searches" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Process GID override, eg. Unraid would be 100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="Logging Mode" Target="LOG_MODE" Default="info" Mode="" Description="Logging Mode trace, debug, info, warn, error" Type="Variable" Display="advanced" Required="false" Mask="false">debug</Config>
